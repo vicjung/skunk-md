@@ -7,6 +7,8 @@
 
 # SkunkHTML
 
+Automatically generate a website on GitHub Pages using Markdown files as the source!
+
 ![SkunkHTML](https://max.gripe/skunk-html/images/skunk-final.png)
 
 Markdown in, GitHub Pages out!
@@ -25,8 +27,6 @@ Upload Markdown (.md) files to publish new posts.
 When a Markdown (.md) file is created and placed in the `/markdown-blog/` folder, the rest happens automagically. GitHub Actions detects changes pushed to the repository, triggers the build process, and deploys the updated site.
 
 ## Some technical details
-
-- This code automatically generates a website on GitHub Pages using Markdown files as the source.
 
 - Blog articles and other content are written in Markdown, allowing for easy content creation and management. These Markdown files are automatically converted to HTML during the build process using F# and the [FSharp.Formatting](https://github.com/fsprojects/FSharp.Formatting) library.
 
@@ -61,7 +61,7 @@ Detailed examples can be found at: https://max.gripe/skunk-html
 
 ## Contributing
 
-Feel free to open [issues](https://github.com/MaxGripe/skunk-html/issues) or submit pull requests if you have suggestions or improvements for the site. Contributions are always welcome!
+Feel free to post in the [discussions](https://github.com/MaxGripe/skunk-html/discussions) section for suggestions, open an [issue](https://github.com/MaxGripe/skunk-html/issues) to report problems, or submit a pull request if you'd like to contribute improvements to the site. Your input is always welcome!
 
 ## License
 
