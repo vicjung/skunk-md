@@ -7,7 +7,8 @@
 
 # SkunkHTML
 
-![SkunkHTML](https://max.gripe/skunk-html/images/images/skunk-final.png)
+![SkunkHTML](https://max.gripe/skunk-html/images/skunk-final.png)
+
 Markdown in, GitHub Pages out!
 
 ## SkunkHTML setup
