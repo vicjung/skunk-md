@@ -1,4 +1,18 @@
-﻿blockquote,
+﻿nav a img {
+
+    border-style: outset;
+    border-color: var(--color-link);
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+code,
+samp {
+    background-color: var(--color-accent-transparent);
+    font-family: var(--font-family);
+}
+
+blockquote,
 blockquote p {
     display: block;
     font-size: medium;
@@ -8,6 +22,7 @@ blockquote p {
     border-left: 0.25rem solid var(--color-accent);
     padding: 0 0 0 1rem;
     margin-left: 0;
+    max-width: 100%;
 }
 
 blockquote p {
@@ -24,6 +39,7 @@ blockquote footer {
 
 a {
     text-decoration: none;
+    word-break: break-word;
 }
 
 * {
@@ -32,4 +48,26 @@ a {
 
 nav {
     margin-bottom: 1rem;
+}
+
+p img,
+pre,
+pre code,
+pre samp {
+    max-width: 100%;
+}
+
+table td[align],
+table th[align] {
+    text-align: left !important;
+}
+
+table td[align="center"],
+table th[align="center"] {
+    text-align: center !important;
+}
+
+table td[align="right"],
+table th[align="right"] {
+    text-align: right !important;
 }
