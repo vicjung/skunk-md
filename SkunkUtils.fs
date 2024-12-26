@@ -41,17 +41,19 @@ module Disk =
         printfn $"Generated: {Path.GetFileName path} -> {path}\n"
 
     let copyFolderToOutput (sourceFolder: string) (destinationFolder: string) =
-        if not (Directory.Exists(destinationFolder)) then
-            Directory.CreateDirectory(destinationFolder)
-            |> ignore
+        if not (Directory.Exists(sourceFolder)) then
+            printfn $"Source folder does not exist: {sourceFolder}"
+        else
+            if not (Directory.Exists(destinationFolder)) then
+                Directory.CreateDirectory(destinationFolder)
+                |> ignore
 
-
-        Directory.GetFiles(sourceFolder)
-        |> Array.iter (fun file ->
-            let fileName = Path.GetFileName(file)
-            let destFile = Path.Combine(destinationFolder, fileName)
-            printfn $"Copying: {fileName} -> {destFile}"
-            File.Copy(file, destFile, true))
+            Directory.GetFiles(sourceFolder)
+            |> Array.iter (fun file ->
+                let fileName = Path.GetFileName(file)
+                let destFile = Path.Combine(destinationFolder, fileName)
+                printfn $"Copying: {fileName} -> {destFile}"
+                File.Copy(file, destFile, true))
 
 module Url =
     open System.Text.RegularExpressions
