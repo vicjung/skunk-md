@@ -6,11 +6,7 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-code,
-samp {
-    background-color: var(--color-accent-transparent);
-    font-family: var(--font-family);
-}
+
 
 blockquote,
 blockquote p {
