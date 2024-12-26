@@ -6,7 +6,7 @@
     let generateFinalHtml (head: string) (header: string) (footer: string) (content: string) (script: string) =
         $"""
         <!DOCTYPE html>
-        <html lang="en" color-mode="user">
+        <html lang="en">
         <head>
             {head}
         </head>
