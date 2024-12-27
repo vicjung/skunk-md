@@ -72,3 +72,17 @@ It also uses some external stuff, each with its own license:
 - [MVP.css](https://github.com/andybrewer/mvp) for styling
 - [microlight.js](https://github.com/asvd/microlight) for syntax highlighting
 - [FSharp.Formatting](https://github.com/fsprojects/FSharp.Formatting) library for Markdown processing
+
+## Optional self-hosting and custom build
+
+Although GitHub builds and hosts this site excellently, if you really want to, you can build your blog locally, for example to host it yourself. To do this:
+
+1. [Download](https://dotnet.microsoft.com/en-us/download) and install .NET on Linux / macOS / Windows 
+2. Run the following commands
+```
+git clone https://github.com/MaxGripe/skunk-html.git
+cd skunk-html
+dotnet restore
+dotnet run
+```
+3. Done. Your site is in the `skunk-html-output` folder.
